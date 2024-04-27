@@ -1,0 +1,83 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #E5DFD1;
+}
+
+.container {
+    position: relative;
+    width: 1000px; /* Adjusted width to fit all three boxes */
+    height: 1000px; /* Adjusted height to fit all three boxes */
+}
+
+.box {
+    position: absolute;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+}
+
+.box1 {
+    width: 639px;
+    height: 434px;
+    top: 50px; /* Adjusted top position */
+    left: 50px; /* Adjusted left position */
+    gap: 0px;
+    opacity: 1; /* Set opacity to 1 to make it visible */
+    transform: rotate(0deg);
+    background-color: #FFFFFF; /* Set background color to white */
+    z-index: 3; /* Set the z-index to bring this box to the front */
+    display: flex; /* Use flexbox for centering */
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+}
+
+.box1 p {
+    padding-left: 20px; /* Add spacing to the left */
+    padding-right: 20px; /* Add spacing to the right */
+}
+
+.box2 {
+    width: 571.85px;
+    height: 580.12px;
+    top: 100px; /* Adjusted top position */
+    left: 100px; /* Adjusted left position */
+    gap: 0px;
+    opacity: 1; /* Set opacity to 1 to make it visible */
+    transform: rotate(0deg);
+    border-top: 10px solid #FFFFFF;
+    box-shadow: 0px 4px 4px 0px #00000040;
+    z-index: 2; /* Set the z-index to bring this box behind box1 */
+}
+
+.box3 {
+    width: 694px;
+    height: 704.03px;
+    top: 150px; /* Adjusted top position */
+    left: 150px; /* Adjusted left position */
+    gap: 0px;
+    overflow: hidden;
+    opacity: 1; /* Set opacity to 1 to make it visible */
+    transform: rotate(0deg);
+    z-index: 1; /* Set the z-index to bring this box behind box2 */
+}
+
+
+.box2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* This ensures the image covers the entire box without distortion */
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+
+
+.box3 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* This ensures the image covers the entire box without distortion */
+    top: 0;
+    left: 0;
+    position: absolute;
+}
